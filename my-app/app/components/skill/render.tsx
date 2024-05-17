@@ -92,7 +92,7 @@ const Render = () => {
 
   return (
     <div className="flex flex-col gap-2" >
-      <p className="text-[24px] text-[#1A033A]">Languages and Frameworks</p>
+      <p className="text-[24px] text-slate-200">Languages and Frameworks</p>
       <div className="flex  justify-between">
       {data &&
         data.map((e, index) => (
@@ -101,11 +101,11 @@ const Render = () => {
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
-            <p className="text-[12px] text-[#1A033A]" >{e.content}</p>
+            <p className="text-[12px] text-slate-200" >{e.content}</p>
           </div>
         ))}
       </div>
-      <p className="text-[24px] text-[#1A033A]">Databases</p>
+      <p className="text-[24px] text-slate-200">Databases</p>
       <div className="flex gap-10">
       {db &&
         db.map((e, index) => (
@@ -114,11 +114,11 @@ const Render = () => {
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
-            <p className="text-[12px] text-[#1A033A]" >{e.content}</p>
+            <p className="text-[12px] text-slate-200" >{e.content}</p>
           </div>
         ))}
       </div>
-      <p className="text-[24px] text-[#1A033A]">Tools and Platforms</p>
+      <p className="text-[24px] text-slate-200">Tools and Platforms</p>
       <div className="flex  justify-between">
       {tools &&
         tools.map((e, index) => (
@@ -127,7 +127,7 @@ const Render = () => {
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
-            <p className="text-[12px] text-[#1A033A]">{e.content}</p>
+            <p className="text-[12px] text-slate-200">{e.content}</p>
           </div>
         ))}
       </div>

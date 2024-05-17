@@ -48,11 +48,8 @@ export default function Portfolio() {
   return (
     <WavyBackground className="max-w-4xl mx-auto p-20">
       <div className="flex flex-col justify-center items-center gap-[40px]">
-        <div className="flex">
-          <div className="w-[50%]">
-            {" "}
-            <img className="rounded-4px" src={profile.src} alt="profile" />
-          </div>
+        <div className=" flex flex-col lg:flex lg:flex-row ">
+            <img className="rounded-xl" src={profile.src} alt="profile" />
           <TypewriterEffect words={words} />
         </div>
         <Link href={"/tabs"}>

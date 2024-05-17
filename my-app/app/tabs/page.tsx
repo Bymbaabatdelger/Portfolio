@@ -1,4 +1,5 @@
 "use client";
+import About from "../components/about/about";
 import Projects from "../components/projects/page";
 import Resume from "../components/resume/Resume";
 import Render from "../components/skill/render";
@@ -12,15 +13,16 @@ export default function TabsDemo() {
       content: (
         <div className=" rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>About me</p>
+          <About/>
         </div>
       ),
     },
     {
-      title: "Tech Skills",
-      value: "Tech Skills",
+      title: "Tech Stacks",
+      value: "Tech Stacks",
       content: (
         <div className="  rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p  className="text-slate-200">Tech Skills</p>
+          <p  className="text-slate-200">Tech Stacks</p>
           <Render/>
         </div>
       ),
@@ -40,7 +42,7 @@ export default function TabsDemo() {
       value: "contact",
       content: (
         <div className=" rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
+          <p>Contact</p>
         </div>
       ),
     },
