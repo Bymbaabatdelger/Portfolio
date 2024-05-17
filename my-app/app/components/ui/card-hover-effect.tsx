@@ -50,8 +50,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <img className="h-[150px]" src={item.image}/>
-            <CardTitle className="text-slate-200">{item.name}</CardTitle>
+            <img className=" h-[50px] lg:h-[150px] w-full" src={item.image}/>
+            <CardTitle  className=" text-[8px] lg:text-[20px] text-slate-200">{item.name}</CardTitle>
           </Card>
         </Link>
       ))}

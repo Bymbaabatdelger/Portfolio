@@ -1,5 +1,6 @@
 "use client";
 import About from "../components/about/about";
+import Contact from "../components/contact/Contact";
 import Projects from "../components/projects/page";
 import Resume from "../components/resume/Resume";
 import Render from "../components/skill/render";
@@ -43,8 +44,9 @@ export default function TabsDemo() {
       title: "Contact",
       value: "contact",
       content: (
-        <div className=" rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
+        <div className=" flex flex-col gap-4 rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
           <p  className="text-[#A5D7E8]">Contact</p>
+          <Contact/>
         </div>
       ),
     },
@@ -61,7 +63,7 @@ export default function TabsDemo() {
   ];
 
   return (
-    <div className="h-[50rem] [perspective:1000px] bg-[#1A033A] relative b flex flex-col w-screen py-2 px-10 items-center justify-between">
+    <div className="h-[60rem] h [perspective:1000px] bg-[#1A033A] relative b flex flex-col w-screen py-2 px-10 items-center justify-between">
       <Tabs tabs={tabs} />
       <Meteors number={50}/>
     </div>
