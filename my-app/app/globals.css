@@ -40,4 +40,8 @@ body {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
 

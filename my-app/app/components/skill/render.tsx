@@ -92,8 +92,8 @@ const Render = () => {
 
   return (
     <div className="flex flex-col gap-2" >
-      <p className="text-[24px] text-slate-200">Languages and Frameworks</p>
-      <div className="flex  justify-between">
+      <p className=" text-[13px] lg:text-[24px] text-slate-200">Languages and Frameworks</p>
+      <div  className="flex flex-wrap gap-2 lg:justify-between">
       {data &&
         data.map((e, index) => (
           <div
@@ -105,8 +105,8 @@ const Render = () => {
           </div>
         ))}
       </div>
-      <p className="text-[24px] text-slate-200">Databases</p>
-      <div className="flex gap-10">
+      <p className="text-[13px] lg:text-[24px] text-slate-200">Databases</p>
+      <div className="flex justify-between lg:gap-10">
       {db &&
         db.map((e, index) => (
           <div
@@ -118,8 +118,8 @@ const Render = () => {
           </div>
         ))}
       </div>
-      <p className="text-[24px] text-slate-200">Tools and Platforms</p>
-      <div className="flex  justify-between">
+      <p className="text-[13px] lg:text-[24px] text-slate-200">Tools and Platforms</p>
+      <div className=" flex flex-wrap gap-4 lg:justify-between">
       {tools &&
         tools.map((e, index) => (
           <div

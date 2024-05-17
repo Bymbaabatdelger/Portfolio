@@ -9,39 +9,39 @@ export default function Portfolio() {
   const words = [
     {
       text: "Hi ",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: " There!",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "My",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "name",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "is",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "Byambajargal",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "I'am",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
       text: "Full-Stack",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-[#3A1078] font-mono dark:text-blue-500",
     },
     {
       text: "developer",
-      className: "text-blue-200 dark:text-blue-200",
+      className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function Portfolio() {
         <Link href={"/tabs"}>
           <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+            <div className="px-8 py-2 font-mono bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
               Get Started
             </div>
           </button>

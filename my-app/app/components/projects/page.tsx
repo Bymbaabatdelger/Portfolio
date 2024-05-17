@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { HoverEffect } from "../ui/card-hover-effect";
 
 const Projects = () => {
   const project = [
@@ -21,15 +22,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col  lg:flex lg:flex-row gap-8">
-      {project &&
-        project.map((el, index) => (
-          <Link href={el.url} key={index} passHref>
-              <div className="flex flex-col items-center w-[200px] h-[200px] hover:border-green-200 rounded-[16px] border-2">
-                <img className="rounded-[16px] w-[196px] h-[123px]" src={el.image}  alt={el.image}/>
-                <p className="text-[16px] hover:text-[#1A033A]  pb-2 ">{el.name}</p>
-              </div>
-          </Link>
-        ))}
+     <HoverEffect items={project}/>
     </div>
   );
 };
