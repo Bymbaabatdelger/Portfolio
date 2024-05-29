@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { WavyBackground } from "./components/ui/wavy-background";
 import profile from "../public/profile.jpg";
 import { TypewriterEffect } from "./components/ui/typewriter-effect";
 import Link from "next/link";
+import { Vortex } from "./components/ui/vortex";
 
 export default function Portfolio() {
   const words = [
@@ -36,8 +36,8 @@ export default function Portfolio() {
       className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
-      text: "Full-Stack",
-      className: "text-[#3A1078] font-mono dark:text-blue-500",
+      text: "Mern-Stack",
+      className: "text-[#edadee] font-mono dark:text-blue-500",
     },
     {
       text: "developer",
@@ -46,10 +46,10 @@ export default function Portfolio() {
   ];
 
   return (
-    <WavyBackground className="max-w-4xl mx-auto p-20">
+    <Vortex className="max-w-4xl h-screen mx-auto p-20">
       <div className="flex flex-col justify-center items-center gap-[40px]">
         <div className=" flex flex-col lg:flex lg:flex-row ">
-            <img className="rounded-xl" src={profile.src} alt="profile" />
+            <img className="rounded-xl h-[300px] w-[180px]" src='../profile.jpg' alt="profile" />
           <TypewriterEffect words={words} />
         </div>
         <Link href={"/tabs"}>
@@ -61,6 +61,6 @@ export default function Portfolio() {
           </button>
         </Link>
       </div>
-    </WavyBackground>
+    </Vortex>
   );
 }

@@ -1,4 +1,3 @@
-// import Link from "next/link";
 import { HoverEffect } from "../ui/card-hover-effect";
 
 const Projects = () => {
@@ -17,6 +16,11 @@ const Projects = () => {
       name: "To-do-list",
       url: "https://to-do-list-theta-kohl.vercel.app/",
       image: "/todo.png",
+    },
+    {
+      name: "Learning management service",
+      url: "https://intern-glms-dashboard-pinecone-studio.vercel.app/",
+      image: "/glms.png",
     },
   ];
 

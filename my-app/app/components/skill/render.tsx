@@ -97,7 +97,7 @@ const Render = () => {
       {data &&
         data.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center border rounded-2xl p-4 border-[#A5D7E8]"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
@@ -110,7 +110,7 @@ const Render = () => {
       {db &&
         db.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center  border rounded-2xl p-4 border-[#A5D7E8]"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
@@ -123,7 +123,7 @@ const Render = () => {
       {tools &&
         tools.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center  border rounded-2xl p-4 border-[#A5D7E8]"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
