@@ -92,12 +92,12 @@ const Render = () => {
 
   return (
     <div className="flex flex-col gap-2" >
-      <p className=" text-[13px] lg:text-[24px] text-[#A5D7E8]">Languages and Frameworks</p>
-      <div  className="flex flex-wrap gap-2 lg:justify-between">
+      <p className=" text-[10px] lg:text-[20px] text-[#A5D7E8]">Languages and Frameworks</p>
+      <div  className="flex flex-wrap gap-2 lg:justify-between border rounded-2xl p-4 border-[#A5D7E8]">
       {data &&
         data.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center border rounded-2xl p-4 border-[#A5D7E8]"
+            className="flex flex-col justify-center items-center"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
@@ -105,12 +105,12 @@ const Render = () => {
           </div>
         ))}
       </div>
-      <p className="text-[13px] lg:text-[24px] text-[#A5D7E8]">Databases</p>
-      <div className="flex gap-4 lg:gap-10">
+      <p className="text-[10px] lg:text-[20px] text-[#A5D7E8]">Databases</p>
+      <div className="flex gap-4 lg:gap-10 border rounded-2xl p-4 border-[#A5D7E8]">
       {db &&
         db.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center  border rounded-2xl p-4 border-[#A5D7E8]"
+            className="flex flex-col justify-center items-center"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />
@@ -118,12 +118,12 @@ const Render = () => {
           </div>
         ))}
       </div>
-      <p className="text-[13px] lg:text-[24px] text-[#A5D7E8]">Tools and Platforms</p>
-      <div className=" flex flex-wrap gap-4 lg:justify-between">
+      <p className="text-[10px] lg:text-[20px] text-[#A5D7E8]">Tools and Platforms</p>
+      <div className=" flex flex-wrap gap-4 lg:justify-between border rounded-2xl p-4 border-[#A5D7E8]">
       {tools &&
         tools.map((e, index) => (
           <div
-            className="flex flex-col justify-center items-center  border rounded-2xl p-4 border-[#A5D7E8]"
+            className="flex flex-col justify-center items-center"
             key={index}
           >
             <img className="h-8 w-8 rounded-xl" src={e.url} alt={e.content} />

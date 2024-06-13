@@ -19,7 +19,7 @@ const Contact = () => {
       {contact &&
         contact.map((el) => (
           <div className="flex gap-4 text-slate-200 text-[7px] lg:text-[24px]">
-            <p>{el.name}</p>
+            <p className="text-purple-400">{el.name}</p>
             <p>{el.value}</p>
           </div>
         ))}
