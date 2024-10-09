@@ -3,7 +3,7 @@ import React from "react";
 import profile from "../public/profile.jpg";
 import { TypewriterEffect } from "./components/ui/typewriter-effect";
 import Link from "next/link";
-import { Vortex } from "./components/ui/vortex";
+import { SparklesCore } from "./components/ui/sparkle";
 
 export default function Portfolio() {
   const words = [
@@ -36,7 +36,7 @@ export default function Portfolio() {
       className: "text-[#A5D7E8] font-mono dark:text-blue-200",
     },
     {
-      text: "Mern-Stack",
+      text: "Full-Stack",
       className: "text-[#edadee] font-mono dark:text-blue-500",
     },
     {
@@ -46,10 +46,21 @@ export default function Portfolio() {
   ];
 
   return (
-    <Vortex className="max-w-4xl h-screen mx-auto p-20">
-      <div className="flex flex-col justify-center items-center gap-[40px]">
+    <div className="flex justify-center items-center max-w-4xl h-screen mx-auto">
+       <div className="w-full absolute inset-0 h-screen">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center gap-[40px] relative z-20">
         <div className=" flex flex-col lg:flex lg:flex-row ">
-            <img className="rounded-xl h-[300px] w-[180px]" src='../profile.jpg' alt="profile" />
+            {/* <img className="rounded-xl h-[300px] w-[180px]" src='../profile.jpg' alt="profile" /> */}
           <TypewriterEffect words={words} />
         </div>
         <Link href={"/tabs"}>
@@ -61,6 +72,6 @@ export default function Portfolio() {
           </button>
         </Link>
       </div>
-    </Vortex>
+    </div>
   );
 }

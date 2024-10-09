@@ -4,7 +4,8 @@ import Contact from "../components/contact/Contact";
 import Projects from "../components/projects/page";
 import Resume from "../components/resume/Resume";
 import Render from "../components/skill/render";
-import { Meteors } from "../components/ui/meteors";
+import { BackgroundGradient } from "../components/ui/background-gradient";
+import { SparklesCore } from "../components/ui/sparkle";
 import { Tabs } from "../components/ui/tabs";
 
 export default function TabsDemo() {
@@ -13,60 +14,71 @@ export default function TabsDemo() {
       title: "About me",
       value: "About me",
       content: (
-
-        <div className=" flex flex-col gap-2 items-center justify-center rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
-          <p  className="text-[#A5D7E8]">About me</p>
-          <About/>
-        </div>
+       <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+           <p  className="text-[#A5D7E8]">About me</p>
+           <About/>
+       </BackgroundGradient>
+       
       ),
     },
     {
       title: "Tech Stacks",
       value: "Tech Stacks",
       content: (
-        <div className="  rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
-          <p   className="text-[#A5D7E8]">Tech Stacks</p>
-          <Render/>
-        </div>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+           <p  className="text-[#A5D7E8]">Tech Stacks</p>
+           <Render/>
+       </BackgroundGradient>
       ),
     },
     {
       title: "Projects",
       value: "Projects",
       content: (
-        <div className=" flex flex-col gap-8 rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
-          <p  className="text-[#A5D7E8]">Projects</p>
-          <Projects/>
-        </div>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+        <p  className="text-[#A5D7E8]">Projects</p>
+        <Projects/>
+    </BackgroundGradient>
       ),
     },
     {
       title: "Contact",
-      value: "contact",
+      value: "Contact",
       content: (
-        <div className=" flex flex-col gap-4 rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
-          <p  className="text-[#A5D7E8]">Contact</p>
-          <Contact/>
-        </div>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+        <p  className="text-[#A5D7E8]">Contact</p>
+        <Contact/>
+    </BackgroundGradient>
       ),
     },
     {
       title: "Resume",
       value: "Resume",
       content: (
-        <div className=" rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0B2447] to-violet-900">
-          <p  className="text-[#A5D7E8]">Resume</p>
-          <Resume/>
-        </div>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+        <p  className="text-[#A5D7E8] pb-6">Resume</p>
+        <Resume/>
+    </BackgroundGradient>
       ),
     },
   ];
-
   return (
-    <div className="h-[60rem] h [perspective:1000px] bg-[#1A033A] relative b flex flex-col w-screen py-2 px-10 items-center justify-between">
+   <div>
+     <div className="w-full absolute inset-0 h-screen">
+    <SparklesCore
+      id="tsparticlesfullpage"
+      background="transparent"
+      minSize={0.6}
+      maxSize={1.4}
+      particleDensity={100}
+      className="w-full h-full"
+      particleColor="#FFFFFF"
+    />
+  </div>
+    <div className="h-[60rem] h [perspective:1000px]  relative z-20  flex flex-col w-screen py-4 px-10 items-center justify-between">
       <Tabs tabs={tabs} />
-      <Meteors number={50}/>
     </div>
+   </div>
   );
 }
 
