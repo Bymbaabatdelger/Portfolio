@@ -18,8 +18,8 @@ const Projects = () => {
       image: "/todo.png",
     },
     {
-      name: "Learning management service",
-      url: "https://intern-glms-dashboard-pinecone-studio.vercel.app/",
+      name: "Educare Learning management service",
+      url: "https://edu.care.mn/#/index",
       image: "/glms.png",
     },
   ];
