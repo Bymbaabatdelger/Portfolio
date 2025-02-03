@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Resume = () => {
 
-    const cv = "https://www.figma.com/design/2i3hiE1rWzHTVz8nSuce9E/CV?node-id=0%3A1&t=XA8pbNRfYVE954YC-1"
+    const cv = "https://www.figma.com/design/yVQW7T0b3ffTCEFwf1QkdE/CV-updated?node-id=0-1&t=bM6NVBvZl4jPCM65-1"
 
   return (
     <Link href={cv} passHref className="flex justify-center items-ceter">
