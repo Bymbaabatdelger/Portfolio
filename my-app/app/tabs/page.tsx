@@ -25,8 +25,8 @@ export default function TabsDemo() {
       title: "Tech Stacks",
       value: "Tech Stacks",
       content: (
-        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
-           <p  className="text-[#A5D7E8]">Tech Stacks</p>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+           <p  className="text-[#A5D7E8] m-auto">Tech Stacks</p>
            <Render/>
        </BackgroundGradient>
       ),
@@ -45,8 +45,8 @@ export default function TabsDemo() {
       title: "Contact",
       value: "Contact",
       content: (
-        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex items-center space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
-        <p  className="text-[#A5D7E8]">Contact</p>
+        <BackgroundGradient className="flex flex-col rounded-xl p-4 text-white text-xl md:text-4xl flex  space-x-1 bg-black m-2  font-bold dark:bg-zinc-900">
+        <p  className="text-[#A5D7E8] mb-10 m-auto">Contact</p>
         <Contact/>
     </BackgroundGradient>
       ),
@@ -67,12 +67,12 @@ export default function TabsDemo() {
      <div className="w-full absolute inset-0 h-screen">
     <SparklesCore
       id="tsparticlesfullpage"
-      background="transparent"
+      background="#171615"
       minSize={0.6}
       maxSize={1.4}
       particleDensity={100}
       className="w-full h-full"
-      particleColor="#FFFFFF"
+      particleColor="#ffffff"
     />
   </div>
     <div className="h-[60rem] h [perspective:1000px]  relative z-20  flex flex-col w-screen py-4 px-10 items-center justify-between">

@@ -50,7 +50,7 @@ export default function Portfolio() {
        <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
-          background="transparent"
+          background="#171615"
           minSize={0.6}
           maxSize={1.4}
           particleDensity={100}

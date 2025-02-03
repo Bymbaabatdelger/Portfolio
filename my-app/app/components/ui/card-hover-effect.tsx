@@ -12,6 +12,7 @@ export const HoverEffect = ({
     name: string;
     url: string;
     image: string;
+    teckstacks: string[];
   }[];
   className?: string;
 }) => {
@@ -20,22 +21,22 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.url}
-          key={item?.url}
-          className="relative group  block p-2 h-full w-full"
+          href={item.url}
+          key={item.url}
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,8 +51,15 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <img className=" h-[50px] lg:h-[80px] w-full" src={item.image}/>
-            <CardTitle  className=" text-[8px] lg:text-[16px] text-slate-200">{item.name}</CardTitle>
+            <img className="h-[50px] lg:h-[80px] w-full" src={item.image} alt={item.name} />
+            <CardTitle className="text-[8px] lg:text-[16px] text-slate-200">{item.name}</CardTitle>
+            <div className="flex flex-wrap gap-2">
+              {item.teckstacks.map((tech, index) => (
+                <div key={index} className="p-2 rounded-xl bg-[#27272A] text-white text-xs">
+                  {tech}
+                </div>
+              ))}
+            </div>
           </Card>
         </Link>
       ))}
@@ -79,6 +87,7 @@ export const Card = ({
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -92,6 +101,7 @@ export const CardTitle = ({
     </h4>
   );
 };
+
 export const CardDescription = ({
   className,
   children,

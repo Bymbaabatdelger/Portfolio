@@ -1,4 +1,5 @@
 
+import { url } from "inspector";
 import React from "react";
 
 const Render = () => {
@@ -16,7 +17,7 @@ const Render = () => {
       content: "JavaScript",
     },
     {
-      url: "https://th.bing.com/th/id/OIP.EzaFeHQLfPxFnlQAQxK8FAAAAA?rs=1&pid=ImgDetMain",
+      url: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
       content: "React",
     },
     {
@@ -43,6 +44,18 @@ const Render = () => {
       url: "https://th.bing.com/th/id/R.20f0338da83ccc07372d989bbb4ce5f8?rik=vlpqNrERosmB0w&pid=ImgRaw&r=0",
       content: "Cypress",
     },
+    {
+      url : "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+      content : "Vue.Js"
+    },
+    {
+      url : "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+      content : "PHP"
+    },
+    {
+      url : "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+      content : "Laravel"
+    }
   ];
 
   const db = [
@@ -57,6 +70,10 @@ const Render = () => {
     {
         url :"https://th.bing.com/th/id/R.9cfd82e7418ae3ffa5cbf47f9aade3b9?rik=1Gdmqt%2fe7zFIYw&pid=ImgRaw&r=0",
         content : "Graphql"
+    },
+    {
+      url : "https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png",
+      content : "MYSQL"
     }
   ]
   const tools = [
